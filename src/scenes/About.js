@@ -8,7 +8,7 @@ import {
   Redirect
 } from "react-router-dom";
 
-const Schedule = () => (
+const About = () => (
   <div>
     <ul>
       <li>6/5 @ Evergreens</li>
@@ -18,4 +18,4 @@ const Schedule = () => (
   </div>
 )
 
-export default Schedule
+export default About
