@@ -1,5 +1,4 @@
 import React from 'react';
-import { render } from 'react-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import { BrowserRouter, Switch, Route, Link, withRouter } from 'react-router-dom'
 import Home from '../../scenes/Home'
@@ -37,7 +36,7 @@ const Nav = withRouter(({ location }) => (
     </nav>
 
 
-    <div id="page">
+    
       <TransitionGroup>
         <CSSTransition
           key={location.key}
@@ -53,7 +52,7 @@ const Nav = withRouter(({ location }) => (
           </Switch>
         </CSSTransition>
       </TransitionGroup>
-    </div>
+    
       <div className="bottomBar"></div>
   </div>
 
