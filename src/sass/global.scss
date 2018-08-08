@@ -8,7 +8,7 @@ $primary-1: #D26B47;
 $primary-2: #409C94;
 
 //Offwhite
-$offwhite: #F7F7F7;
+$offwhite: #F8F8F8;
 
 //Desaturated dark
 $dark: #30313B;
@@ -107,72 +107,3 @@ $tungstenmed: "Tungsten Med", "Helvetica", "Helvetica Neue", sans-serif;
     font-weight: bold;
     font-style: normal;
 }
-
-
-//Basic Styles
-
-
-h1,h2,h3,h4,h5,h6,p,li,a{
-	color: $dark;
-}
-
-
-h1{
-	font-family: $futurabold;
-
-
-}
-
-
-h2{
-	font-size:  0.6667rem;
-	font-family: $metabold;
-}
-
-
-
-h3{
-
-}
-
-h4{
-
-}
-
-h5{
-	font-size:  0.2857rem;
-	font-family: $metabold;
-}
-
-h6{
-	font-size: 0.2857rem;
-	font-family: $futurabold;
-	text-transform: uppercase;
-}
-
-p, li{
-	font-size: 0.2857rem;
-	font-family: $metareg;
-	line-height: 19px;
-}
-
-p{
-	max-width: 600px;
-}
-
-a{
-	text-decoration: none;
-	display: inline-block;
-	font-size: 0.2857rem;
-
-	&.button-cta{
-		text-transform: uppercase;
-		font-family: $futurabold;
-	}
-}
-
-
-
-
-
-

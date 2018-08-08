@@ -1,0 +1,87 @@
+@import "global.scss";
+//Basic Styles
+
+
+h1,h2,h3,h4,h5,h6,p,li,a{
+	color: $dark;
+}
+
+
+h1{
+	font-family: $futurabold;
+   line-height: 1.3rem;
+	
+
+}
+
+@media screen and (max-height:1000px){
+		h1{
+			font-size: .6rem;
+			line-height: .8rem;
+		}
+	}
+
+h2{
+	font-size:  0.6667rem;
+	font-family: $metabold;
+}
+
+@media screen and (max-height:1000px){
+		h2{
+			font-size: .4rem;
+		}
+	}
+
+
+h3{
+
+}
+
+h4{
+
+}
+
+h5{
+	font-size:  0.2857rem;
+	font-family: $metabold;
+}
+
+h6{
+	font-size: 0.2857rem;
+	font-family: $futurabold;
+	text-transform: uppercase;
+}
+
+p{
+	font-size: 0.2857rem;
+	font-family: $metareg;
+	line-height: 19px;
+}
+
+p{
+	max-width: 600px;
+}
+
+a{
+	text-decoration: none;
+	display: inline-block;
+	font-size: 0.2857rem;
+
+	&:hover{
+		text-decoration: underline;
+	}
+
+	&.button-cta{
+		text-transform: uppercase;
+		font-family: $futurabold;
+	}
+}
+
+
+
+
+.box-shadow{
+	box-shadow: 0px 0px 14px rgba(0,0,0,0.2);
+	border-radius: 4px;
+	background-color: white;
+}

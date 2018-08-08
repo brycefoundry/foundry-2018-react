@@ -33,38 +33,3 @@
   src: url("../fonts/FuturaStd-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaStd-Bold.woff2") format("woff2"), url("../fonts/FuturaStd-Bold.woff") format("woff"), url("../fonts/FuturaStd-Bold.ttf") format("truetype"), url("../fonts/FuturaStd-Bold.svg#FuturaStd-Bold") format("svg");
   font-weight: bold;
   font-style: normal; }
-
-h1, h2, h3, h4, h5, h6, p, li, a {
-  color: #30313B; }
-
-h1 {
-  font-family: "Futura Bold", "Helvetica", "Helvetica Neue", sans-serif; }
-
-h2 {
-  font-size: 0.6667rem;
-  font-family: "Meta Serif Bold", "Times New Roman", serif; }
-
-h5 {
-  font-size: 0.2857rem;
-  font-family: "Meta Serif Bold", "Times New Roman", serif; }
-
-h6 {
-  font-size: 0.2857rem;
-  font-family: "Futura Bold", "Helvetica", "Helvetica Neue", sans-serif;
-  text-transform: uppercase; }
-
-p, li {
-  font-size: 0.2857rem;
-  font-family: "Meta Serif Reg", "Times New Roman", serif;
-  line-height: 19px; }
-
-p {
-  max-width: 600px; }
-
-a {
-  text-decoration: none;
-  display: inline-block;
-  font-size: 0.2857rem; }
-  a.button-cta {
-    text-transform: uppercase;
-    font-family: "Futura Bold", "Helvetica", "Helvetica Neue", sans-serif; }

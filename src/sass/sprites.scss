@@ -1,0 +1,48 @@
+/**
+
+
+Icon Sprites
+
+
+**/
+
+
+
+.icon{
+
+	background: url('../images/global/icons-sprite.png') no-repeat transparent scroll;
+	background-size: 60px 2000px;
+	background-color: transparent;
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 50px;
+	text-indent: 30px;
+	height: 30px;
+	line-height: 30px;
+
+	&.strategy{
+		background-position: -20px -175px;
+	}
+
+	&.healthcare{
+		background-position: -20px -95px;
+	}
+
+	&.marketingexp{
+		background-position: -20px -13px;
+	}
+
+	&.wordpress{
+		background-position: -20px -336px;	
+	}
+
+	&.saas{
+		background-position: -20px -258px;	
+	}
+
+	&.userresearch{
+		background-position: -20px -415px;	
+	}
+}
+
+

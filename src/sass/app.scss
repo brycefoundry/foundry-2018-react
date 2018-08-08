@@ -1,9 +1,29 @@
 @import "reset.scss";
 @import "global.scss";
+@import "core.scss";
+@import "sprites.scss";
 
 
 html{
-  font-size: 42px;
+  font-size: 52px;
+}
+
+@media only screen and (max-width: 2500px){
+  html{
+    font-size: 42px;
+  }
+}
+
+@media screen and (max-height:1200px){
+  html{
+    font-size: 42px;
+  }
+}
+
+@media screen and (max-height:1080px){
+  html{
+    font-size: 36px;
+  }
 }
 
 body{
@@ -11,56 +31,46 @@ body{
 
 }
 
-.App {
-  text-align: center;
+.page{
+  scroll-snap-type: mandatory;
+  scroll-snap-destination: 100% 0%;
+  scroll-snap-points-y: repeat(100%);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
 
 
 
 .fade-enter {
-  opacity: 0;
-  z-index: 1;
+  
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  
 }
 
 .fade-enter.fade-enter-active {
-  opacity: 1;
-  transition: opacity 1000ms ease-in;
+  
+  
+  
   
 }
 
 .fade-exit {
-  opacity: 1;
+  
   z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  
+
 }
 
 .fade-exit.fade-exit-active {
-  opacity: 0;
-  transition: opacity 0ms ease-in;
+  
+  
+  
+  
 }
 
 
@@ -74,224 +84,21 @@ body{
 
 .wrapper{
   margin: 20px;
-  
   height: 100%;
   overflow: auto;
- 
-
-}
+ }
 
 .bottomBar{
   height: 20px;
-
   position: absolute;
   left: 0;
   bottom: 0px;
   width: 100%;
-  z-index: 20;
+  z-index: 40;
   background-color: white;
 }
 
 
-nav{
-  width: 44px;
-  overflow: hidden;
-  border-radius: 4px;
-  position: fixed;
-  left: 20px;
-  top: 20px;
-  height: 100%;
-  background-color: $dark;
-  z-index: 10;
-
-}
-
-
-
-
-section.home{
-  height: 100vh;
-  position: relative;
-  &.section-1{
-      display: grid;
-    grid-template-columns: repeat(8, 5fr);
-    grid-template-rows: repeat(4,2fr);
-  }
-
-  &.section-2{
-    background-color: grey;
-
-
-  }
-
-  .logo{
-    grid-column: 2 / span 1;
-    position: relative;
-    z-index: 10;
-    background: url('../images/global/foundry-atx-logo.png')no-repeat transparent scroll;
-    background-size: 166px 45px;
-    background-position: 0 40px;
-
-  }
-
-  .ticker{
-    grid-column: 3 / span 2;
-    position: relative;
-    z-index: 10;
-
-
-    .avatar{
-      
-      width: 35px;
-      
-      
-      display: inline-block;
-      vertical-align: top;
-
-    }
-
-    .avatar-image{
-      width: 35px;
-      height: 35px;
-      background-color: blue;
-      border-radius: 35px;
-
-    }
-
-    ul{
-      display: table-cell;
-      vertical-align: top;
-      padding-left: 10px;
-    }
-
-    li p{
-      font-family: $metabold;
-    }
-  }
-
-  .ticker-wrapper{
-    padding: 0 20px;
-    margin-top: 50px;
-    display: table;
-  }
-
- 
-
-  .featured{
-    grid-column: 2 / span 3;
-    grid-row: 2 / span 2;
-    position: relative;
-    z-index: 10;
-    display: grid;
-    grid-template-columns: repeat(3, 4fr);
-    grid-template-rows: repeat(1,2fr);
-
-    .selections{
-      grid-column: 1 / span 1;
-    }
-
-    .stats-container{
-     grid-column: 2 / span 2; 
-     h1{
-      padding: 0 20px;
-     }
-    }
-
-    .focus-container{
-      grid-column: 1 / span 3;
-
-    }
-
-
-
-  }
-
-  .featured-image-container{
-    grid-column: 5 / span 4;
-    grid-row: span 4;
-    z-index: 10;
-    background: url('../images/home/featured-placeholder.png') no-repeat transparent scroll;
-    background-size: cover;
-  }
-
-  .grid-base{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: transparent;
-    z-index: 0;
-    display: grid;
-    grid-template-columns: repeat(8, 5fr);
-    grid-template-rows: repeat(4,2fr);
-
-    .grid-1{
-      background-color: $offwhite;
-     grid-column: 1 / span 2;
-     grid-row: span 4;
-    }
-  }
-
-}
-
-.featured-image-container{
-  grid-template-rows: repeat(4,2fr);
-  grid-template-columns: repeat(3, 5fr);
-  display: grid;
-}
-
-
-.featured-description-container{
-  display: grid;
-  grid-column: 3 / span 1;
-  grid-row: 2 / span 1;
-
-  .featured-description{
-    
-    height: auto;
-    display: block;
-    
-  }
-
-  p{
-    background-color: white;
-    padding: 20px;
-
-    a{
-      display: block;
-      margin-top: 10px;
-    }
-  }
-}
-
-
-
-.focus-container{
-  display: grid;
-  grid-template-rows: repeat(2,2fr);
-  grid-template-columns: repeat(3, 3fr);
-
-  
-
-  .right{
-    display: grid;
-    grid-column: 2 / span 2;
-
-
-  }
-
-  ul{
-    display: grid;
-    padding: 0 20px;
-    grid-template-columns: repeat(2, 3fr);
-
-    li{
-      display: grid;
-
-    }
-
-
-  }
-
-}
+@import "navigation.scss";
+@import "home.scss";
+@import "animation.scss";

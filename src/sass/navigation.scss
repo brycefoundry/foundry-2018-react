@@ -1,0 +1,61 @@
+@import "global.scss";
+
+nav{
+  width: 44px;
+  overflow: hidden;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  height: 100%;
+  background-color: $dark;
+  z-index: 18;
+
+  a{
+    border: none;
+    font-family: $futurabold;
+    font-size:12px;
+      color: #ffffff;
+      text-transform: uppercase;
+      width: 100px;
+      
+      height: 44px;
+      background-color: $primary-1;
+      line-height: 44px;
+      transform: rotate(-90deg);
+      position: absolute;
+      right: -38px;
+      bottom: 78px;
+      padding: 0 10px;
+      text-align: center;
+      cursor: pointer;
+
+      &:hover{
+        
+      }
+    
+
+  }
+
+
+#menu-btn{
+  border: none;
+  font-family: $futurabold;
+  font-size: 12px;
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 100px;
+    background-color: transparent;
+    height: 44px;
+    background-color: red;
+    line-height: 44px;
+    padding-right: 30px;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -28px;
+    top: 20px;
+    cursor: pointer;
+  background-color: transparent;
+}
+
+
+}

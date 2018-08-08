@@ -1,0 +1,96 @@
+/***********
+Home page animations
+**************/
+.fade-enter section.home .featured-image-container {
+  transform: scaleX(0);
+  transform-origin: top left; }
+  .fade-enter section.home .featured-image-container .vertical-rule {
+    transform-origin: top left;
+    transform: scaleY(0); }
+  .fade-enter section.home .featured-image-container #video-container video {
+    opacity: 0; }
+
+.fade-enter section.home .featured-description-container {
+  transform: scaleX(0);
+  transform-origin: top left; }
+  .fade-enter section.home .featured-description-container p {
+    opacity: 0; }
+
+.fade-enter section.home.section-2 .process-module-container {
+  transform: translateY(300px); }
+
+.fade-enter.fade-enter-active section.home .featured-image-container {
+  transform: scaleX(1);
+  transition: .3s all ease-in-out;
+  transition-delay: 1s; }
+  .fade-enter.fade-enter-active section.home .featured-image-container .vertical-rule {
+    transform: scaleY(1);
+    transform-origin: top left;
+    transition: .3s all ease-in-out;
+    transition-delay: 1.3s; }
+  .fade-enter.fade-enter-active section.home .featured-image-container #video-container video {
+    transition: .3s ease-in-out;
+    opacity: 1;
+    transition-delay: 1.3s; }
+
+.fade-enter.fade-enter-active section.home .featured-description-container {
+  transform: scaleX(1);
+  transform-origin: top left;
+  transition: .3s all ease-in-out;
+  transition-delay: 1.3s; }
+  .fade-enter.fade-enter-active section.home .featured-description-container p {
+    transition: .3s all ease-in-out;
+    transition-delay: 1.6s;
+    opacity: 1; }
+
+.fade-enter.fade-enter-active section.home.section-2 .process-module-container {
+  transform: translateY(0);
+  transition: .5s all ease-in-out;
+  transition-delay: .3s; }
+
+.fade-exit section.home .featured-image-container {
+  transform: scaleX(1);
+  transform-origin: top left; }
+  .fade-exit section.home .featured-image-container .vertical-rule {
+    transform: scaleY(1);
+    transform-origin: top left; }
+  .fade-exit section.home .featured-image-container #video-container video {
+    opacity: 1; }
+
+.fade-exit section.home .featured-description-container {
+  transform: scaleX(1);
+  transform-origin: top left; }
+  .fade-exit section.home .featured-description-container p {
+    opacity: 1; }
+
+.fade-exit section.home.section-2 .process-module-container {
+  transform: translateY(0); }
+
+.fade-exit.fade-exit-active section.home .featured-image-container {
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: .3s all ease-in-out;
+  transition-delay: .6s; }
+  .fade-exit.fade-exit-active section.home .featured-image-container .vertical-rule {
+    transform: scaleY(0);
+    transform-origin: top left;
+    transition: .3s all ease-in-out;
+    transition-delay: .3s; }
+  .fade-exit.fade-exit-active section.home .featured-image-container #video-container video {
+    opacity: 0;
+    transition: .3s all ease-in-out; }
+
+.fade-exit.fade-exit-active section.home .featured-description-container {
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: .3s all ease-in-out;
+  transition-delay: .3s; }
+  .fade-exit.fade-exit-active section.home .featured-description-container p {
+    transition: .3s all ease-in-out;
+    transition-delay: 0s;
+    opacity: 0; }
+
+.fade-exit.fade-exit-active section.home.section-2 .process-module-container {
+  transform: translateY(300px);
+  transition: .3s all ease-in-out;
+  transition-delay: 0s; }
