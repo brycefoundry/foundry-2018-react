@@ -33,3 +33,6 @@
   src: url("../fonts/FuturaStd-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaStd-Bold.woff2") format("woff2"), url("../fonts/FuturaStd-Bold.woff") format("woff"), url("../fonts/FuturaStd-Bold.ttf") format("truetype"), url("../fonts/FuturaStd-Bold.svg#FuturaStd-Bold") format("svg");
   font-weight: bold;
   font-style: normal; }
+
+.noLandscape {
+  display: none; }

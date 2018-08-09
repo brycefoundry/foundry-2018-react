@@ -1,33 +1,37 @@
-@import "global.scss";
 
 
-@media screen and (min-width:415px){
 
 nav{
-  width: 44px;
-  overflow: hidden;
-  position: fixed;
-  left: 20px;
-  top: 20px;
-  height: 100%;
-  background-color: $dark;
-  z-index: 18;
+ position: fixed;
+    top: 0px;
+    left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 40px;
+    overflow: hidden;
+    background: url('../images/global/foundry-atx-logo.png')no-repeat white scroll;
+    background-size: 133px 37px;
+
+    background-position: center 11px;
+
+    width: 100%;
+    z-index: 120;
 
   a{
     border: none;
     font-family: $futurabold;
     font-size:12px;
-      color: #ffffff;
+      color: $dark;
       text-transform: uppercase;
       width: 100px;
       
       height: 44px;
-      background-color: $primary-1;
+      background-color: transparent;
       line-height: 44px;
-      transform: rotate(-90deg);
+      transform: rotate(0deg);
       position: absolute;
-      right: -38px;
-      bottom: 78px;
+      right: 0px;
+      bottom: auto;
       padding: 0 10px;
       text-align: center;
       cursor: pointer;
@@ -44,14 +48,15 @@ nav{
     .close-btn{
       position: absolute;
       top: 14px;
-      left: 70px;
+      left: 20px;
       display: block;
       background-color: transparent;
       width: 15px;
       height: 15px;
       transform-origin: center center;
-      transform: rotate(0deg);
+      transform: rotate(90deg);
       transition: .2s all ease-in-out;
+
     }
 
       .line-1,.line-2{
@@ -63,7 +68,7 @@ nav{
         position: absolute;
         top: 0px;
         z-index: 20;
-        background-color: $primary-2;
+        background-color: $dark;
         transition: .2s all ease-in-out;
       }
       .line-1{
@@ -79,18 +84,17 @@ nav{
   border: none;
   font-family: $futurabold;
   font-size: 12px;
-    color: #ffffff;
+    color: $dark;
     text-transform: uppercase;
     width: 100px;
     background-color: transparent;
     height: 44px;
     background-color: red;
-    line-height: 44px;
+    line-height: 40px;
     padding-right: 30px;
-    transform: rotate(-90deg);
+    text-indent: 38px;
     position: absolute;
-    left: -28px;
-    top: 30px;
+  
     cursor: pointer;
   background-color: transparent;
 
@@ -114,10 +118,6 @@ nav{
 
   }
 }
-
-
-}
-
 
 
 }

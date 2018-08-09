@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import Chart from 'chart.js';
-import Listings from './Listings'
+
+
+
+
+var bg = require('../images/home/placeholder-brain-image.png')
 
 
 class Home extends Component {
@@ -93,6 +97,7 @@ render() {
 
 
 return (
+
   <div id="page">
       <section className="home section-1">
         
@@ -117,21 +122,25 @@ return (
 
           </div>
 
+
+
           <div className="featured">
             <div className="selections">
               <h6>Cases</h6>
               <ul className="selections-cases">
+               <li className="active"><a href="">Valera Health</a></li>
                 <li><a href="">Atlassian</a></li>
-                <li><a href="">Valera Health</a></li>
-                <li><a href="">Code My Views</a></li>
+               
+                
                 <li><a href="">Alter G</a></li>
-                <li><a href="">Heyl Williams</a></li>
+               
                 <li><a href="">Grace Hill</a></li>
               </ul>
 
               
 
             </div>
+            <div className="featured-wrapper" style ={ { backgroundImage: "url("+bg+")" } } >
 
             <div className="stats-container">
               <h1>Cognitive Behavioral Therapy</h1>
@@ -154,7 +163,7 @@ return (
                     <h5>Activity<br />Increase</h5>
                     <span class="num">212</span><span>%</span>
                 </div>
-
+                 <a className="featured-case-btn" href="">Read Case</a>
               </div>
 
             </div>
@@ -204,6 +213,7 @@ return (
 
 
             </div>
+            </div>
 
           </div>
 
@@ -242,9 +252,10 @@ return (
               </div>
 
               <div className="vertical-rule"></div>
+              <div className="vertical-rule third"></div>
           </div>
 
-
+          
         
 
           <div className="grid-base">
@@ -274,6 +285,8 @@ return (
           </div>
 
       </section>
+
+    
     </div>
     )
   }

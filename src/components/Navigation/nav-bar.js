@@ -8,16 +8,15 @@ import About from '../../scenes/About'
 import Quote from '../../scenes/Quote'
 
 
-
 function Nav({ location }) {
   return (
     <div className="wrapper-container">
     <div className="wrapper">
 
-    <Link to='/'>
+    
       <nav>
         
-            <button id="menu-btn">Menu</button>
+            <button id="menu-btn">Menu<span className="close-btn"><span className="line-1"></span><span className="line-2"></span></span></button>
             
             <Link to='/get-a-quote'>Get a Quote</Link>
           
@@ -25,7 +24,7 @@ function Nav({ location }) {
         
       </nav>
 
-    </Link>
+    
       <TransitionGroup className="transition-group">
         <CSSTransition
           key={location.key}
@@ -44,6 +43,7 @@ function Nav({ location }) {
         </CSSTransition>
       </TransitionGroup>
       <div className="bottomBar"></div>
+      <div className="noLandscape"><h2>Please rotate your device into portrait mode for the best possible experience.</h2></div>
       </div>
 
       </div>

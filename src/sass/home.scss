@@ -29,6 +29,12 @@ section.home{
 
   }
 
+  .featured-wrapper{
+    display: grid;
+    grid-column: 2 / span 2;
+    background-size: 0 0;
+  }
+
   .logo-container{
     grid-column: 2 / span 1;
     z-index: 10;
@@ -74,7 +80,7 @@ section.home{
     }
   }
 
-  @media screen and (max-height:1350px){
+  @media screen and (max-height:1350px)and(min-width: 1024px){
     .logo{
       margin-top: 0px;
       position: absolute;
@@ -83,7 +89,7 @@ section.home{
     }
   }
 
- @media screen and (max-height:830px){
+ @media screen and (max-height:830px)and(min-width: 1024px){
     .logo{
       margin-top: 0px;
       position: absolute;
@@ -91,7 +97,7 @@ section.home{
     }
   }
 
-  @media screen and (max-height:690px){
+  @media screen and (max-height:690px)and(min-width: 1024px){
     .logo{
       margin-top: 0px;
       position: absolute;
@@ -183,6 +189,8 @@ section.home{
     }
   }
 
+  
+
  
 
   .featured{
@@ -219,6 +227,10 @@ section.home{
 
 
       }
+
+      li.active a{
+        font-family: $metabold;
+      }
     }
 
 
@@ -246,6 +258,10 @@ section.home{
 
       .quants-3{
         margin-right: 20px;
+      }
+
+      .featured-case-btn{
+        display: none;
       }
     }
 
@@ -358,7 +374,9 @@ section.home{
       display: block;
       background-color: white;
       transform-origin: top left;
-     
+      .third{
+        display: none;
+      }
     }
 
     }
@@ -403,7 +421,7 @@ section.home{
 
     }
 
-    @media screen and (max-height:1200px){
+    @media screen and (max-height:1200px)and(min-width: 1024px){
               .grid-3{
                 display: none;
             }
@@ -411,6 +429,8 @@ section.home{
   }
 
 }
+
+
 
 .featured-image-container{
   grid-template-rows: repeat(6,2fr);
@@ -466,7 +486,7 @@ margin-top: 60px;
 
   .right{
     display: grid;
-    grid-column: 2 / span 2;
+    grid-column: 1 / span 3;
 
 
   }
@@ -597,3 +617,6 @@ h6{
     margin: 40px 0 0px 40px;
   }
 }
+
+
+
